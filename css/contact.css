@@ -1,3 +1,16 @@
 nav {
-    background-color: #6d4df2;
+    background-color: rgb(126, 9, 9);
 }
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }

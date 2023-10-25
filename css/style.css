@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294e3;
-    --secondary: rgb(66, 6, 6);
-    --light: #f0f6ff;
+    --primary: #1f1d07ec; 
+    --secondary: rgb(126, 9, 9);
+    --light: #828486;
     --dark: #262b47;
 }
 
@@ -173,9 +173,9 @@ h6,
     padding: 45px 0;
     font-family: 'Jost', sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    color: var(--light) !important;
-    outline: none;
+    font-weight: 700;
+    color:#ffffff !important; 
+    outline:#ffffff;
     transition: 0.5s;
 }
 
@@ -203,7 +203,7 @@ h6,
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #ffffff;
+    color: #fcfbfbf5;
 }
 
 .navbar-light .navbar-brand img {
@@ -268,7 +268,7 @@ h6,
 
     .sticky-top.navbar-light {
         position: fixed;
-        background: #ffffff;
+        background: #f7f7f7;
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
@@ -290,7 +290,7 @@ h6,
 .hero-header {
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
-    background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    background: url(../img/bg-circle.png), url(),
         url(../img/bg-bottom.png),
         linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-position: left 0px top 0px, right 0px top 50%, center bottom;
@@ -358,8 +358,8 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 253px 500px;
+    background: url(../img/screenshot\ border.webp) center center no-repeat ; 
+    background-size: 350px 700px;
     z-index: 1;
 }
 
@@ -465,13 +465,13 @@ h6,
 
 /*** Footer ***/
 .footer {
-    margin-top: 6rem;
-    padding-top: 9rem;
-    background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
-        url(../img/bg-top.png),
+    margin-top: 0.5rem;
+    padding-top: 0rem;
+    background: url(../img/bg-circle.png), url(../img/bg-circle.png), 
+        
         linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-position: left 0px bottom 0px, right 0px top 50%, center top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .footer .btn.btn-social {
@@ -482,7 +482,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid rgba(256, 256, 256, 0.1);
+    border: 12px solid rgba(256, 256, 256, 0.1);
     border-radius: 40px;
     transition: 0.3s;
 }
@@ -515,9 +515,9 @@ h6,
 }
 
 .footer .copyright {
-    padding: 25px 0;
+    padding: 5px 0;
     font-size: 14px;
-    border-top: 1px solid rgba(256, 256, 256, 0.1);
+    border-top: 1px solid rgba(233, 40, 40, 0.1);
 }
 
 .footer .copyright a {
@@ -525,9 +525,9 @@ h6,
 }
 
 .footer .footer-menu a {
-    margin-right: 15px;
+    margin-right: 15x;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 0px solid rgba(197, 41, 41, 0.1);
 }
 
 .footer .footer-menu a:last-child {
@@ -535,3 +535,61 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 75%;
+    height: 70%;
+    transition: all 2s;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+    border-radius: 3px;
+  }
+
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .img-hover img {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    display: inline-block;
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+    
